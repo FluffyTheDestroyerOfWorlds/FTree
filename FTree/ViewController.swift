@@ -10,9 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func NextView(sender: UIButton) {
+        
+        navigationController?.title = ""
+        navigationItem.title = sender.currentTitle
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
